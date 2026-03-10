@@ -133,6 +133,22 @@ https://templatemo.com/tm-564-plot-listing
     </div>
   </div>
 
+  <section class="container">
+    <div class="row">
+      <div class="col-100 text-center">
+        <?php
+$hour = date('H');
+if ($hour < 12) {
+    echo "<h3>Dobré ráno</h3>";
+        } elseif ($hour < 18) {
+        echo "<h3>Dobrý deň</h3>";
+        } else {
+        echo "<h3>Dobrý večer</h3>";
+        }
+        ?>
+      </div>
+    </div>
+  </section>
 
   <div class="popular-categories">
     <div class="container">
